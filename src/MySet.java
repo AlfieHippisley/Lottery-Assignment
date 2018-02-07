@@ -1,3 +1,4 @@
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -14,9 +15,27 @@ public class MySet {
 	
 	private Set<Integer> setData;
 
+	// Constructors
+	
 	public MySet() {
 		setData = new HashSet<Integer>();
 	}
+	
+	public MySet(Set<Integer>data) {
+		this.setData = data;
+	}
+	
+	// Getters and Setters
+	
+	public Set<Integer> getSetData() {
+		return setData;
+	}
+
+	public void setSetData(Set<Integer> setData) {
+		this.setData = setData;
+	}
+
+	// Methods
 	
 	public boolean isSetEmpty() {
 		// Returns true if set is empty
@@ -51,7 +70,8 @@ public class MySet {
 		return setData.size();
 	}
 	
-	public void intersection() {
-		
+	public void intersection(MySet secondSet){
+	  setData.retainAll(secondSet.getSetData());
 	}
+
 }
