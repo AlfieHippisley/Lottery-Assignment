@@ -1,4 +1,3 @@
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -71,7 +70,7 @@ public class MySet {
 	}
 	
 	public void intersection(MySet secondSet){
-	  setData.retainAll(secondSet.getSetData());
+	    setData.retainAll(secondSet.getSetData());
 	}
 
 }

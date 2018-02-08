@@ -35,9 +35,11 @@ public class Tester {
 		testSetOne.addToSet(4);
 		testSetOne.addToSet(5);
 		
-		testSetTwo.addToSet(7);
-		testSetTwo.addToSet(8);
+		testSetTwo.addToSet(1);
+		testSetTwo.addToSet(2);
 		testSetTwo.addToSet(3);
+		testSetTwo.addToSet(4);
+		testSetTwo.addToSet(5);
 	}
 	
 	public void displaySet() {
@@ -64,6 +66,7 @@ public class Tester {
 	public void getIntersection() {
 		testSetOne.intersection(testSetTwo);
 	}
+	
 	/**
 	 * For MySet class testing do:
 	 * 
@@ -76,6 +79,7 @@ public class Tester {
 	 * test1.getSetCardinality();
 	 * 
 	 */
+	
 	public static void main(String[] args) {
 		// Create Tester object and run tests
 		Tester test1 = new Tester();
